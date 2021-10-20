@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Service BEM</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <nav class="nav">
+                <div class="nav__menu menu">
+                    <img src="icons/nav__menu/burger.svg" alt="burger-menu">
+                </div>
+                <div class="nav__line"></div>
+                <div class="nav__menu logo">
+                    <img src="icons/nav__menu/logo.svg" alt="main-logo">
+                </div>
+                <div class="nav__menu contact">
+                    <div class="nav__menu contact__phone">
+                        <img src="icons/nav__menu/call.svg" alt="phone">
+                    </div>
+                    <div class="nav__menu contact__chat">
+                        <img src="icons/nav__menu/chat.svg" alt="chat-logo">
+                    </div>
+                    <div class="nav__menu contact__person">
+                        <img src="icons/nav__menu/profile.svg" alt="person-logo">
+                    </div>
+                </div>
+                <div class="nav__menu service">
+                    <div class="nav__menu service__repair">
+                        <img src="icons/nav__menu/repair.svg" alt="service">
+                    </div>
+                    <div class="nav__menu service__search">
+                        <img src="icons/nav__menu/checkstatus.svg" alt="search">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__title title">
+            <h1 class="title__header">Услуги и сервисы</h1>
+            <div class="title__container">
+                <div class="title__1120px">
+                    <p>Оставить заявку</p>
+                    <img src="icons/title__container/repair.svg" alt="repair">
+                </div>
+                <div class="title__1120px">
+                    <p>Статус ремонта</p>
+                    <img src="icons/title__container/checkstatus.svg" alt="search">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="scroll-panel btns">
+            <button class="scroll-panel__btn scroll-panel__btn--focus">Ремонтируемые устройства</button>
+            <button class="scroll-panel__btn">Дополнительные услуги</button>
+            <button class="scroll-panel__btn">Цены на услуги</button>
+            <button class="scroll-panel__btn">Специальные цены</button>
+            <button class="scroll-panel__btn">Отзывы</button>
+        </section>
+
+
+        <article class="descr">
+
+            <div class="descr__title title">
+                <p class="title__article">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                    отремонтировать свой ноутбук Dell с официальной гарантией производителя. <br><br>
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                    очередь, советуют нас родным и близким.
+                </p>
+                <div class="descr__full full-title">
+                    <div class="full-title__btn">
+                        <img src="icons/descr__full/arrow.svg" alt="arrow">
+                        <p>Читать далее</p>
+                    </div>
+                </div>
+            </div>
+
+            <img class="descr__media img320" src="img/descr__media/320px.jpg" alt="service">
+            <img class="descr__media img768" src="img/descr__media/768px.jpg" alt="service">
+            <img class="descr__media img1120" src="img/descr__media/1120px.jpg" alt="service">
+        </article>
+
+
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>
