@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-family: 'TT Lakes Medium';
+    font-family: 'TT Lakes Condensed Medium';
     margin: 0;
 }
 *, *:before, *:after {
@@ -165,6 +165,16 @@ li {
     src: url('/assets/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
     url('/assets/fonts/TTLakes-Medium.woff') format('woff'),
     url('/assets/fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'TT Lakes Condensed Medium';
+    src: url('/assets/fonts/TTLakesCondensed-Medium.eot');
+    src: url('/assets/fonts/TTLakesCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/TTLakesCondensed-Medium.woff') format('woff'),
+    url('/assets/fonts/TTLakesCondensed-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
