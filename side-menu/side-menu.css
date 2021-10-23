@@ -37,6 +37,11 @@ li {
 
 .nav__close{
     margin-right: 16px;
+    transition:filter 0.3s ease-in-out;
+}
+
+.nav__close:hover{
+    filter: opacity(65%);
 }
 
 .nav__logo{
@@ -46,6 +51,11 @@ li {
 .nav__search{
     margin-right: 24px;
     margin-left: 78px;
+    transition:filter 0.3s ease-in-out;
+}
+
+.nav__search:hover{
+    filter: opacity(65%);
 }
 
 .side-menu__section{
@@ -91,6 +101,30 @@ li {
 
 .footer__phone{
     font-family: 'TT Lakes Bold';
+}
+
+.footer__phone-logo{
+    transition: 0.3s filter ease-in-out;
+}
+
+.footer__phone-logo:hover{
+    filter: hue-rotate(70deg) opacity(90%);
+}
+
+.footer__chat-logo{
+    transition: 0.3s filter ease-in-out;
+}
+
+.footer__chat-logo:hover{
+    filter: hue-rotate(70deg) opacity(90%);
+}
+
+.footer__person-logo{
+    transition: 0.3s filter ease-in-out;
+}
+
+.footer__person-logo:hover{
+    filter: hue-rotate(70deg) opacity(90%);
 }
 
 .footer__contacts img{
