@@ -46,6 +46,14 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
 .wrapper{
     max-width:1440px;
     margin:0 auto;
@@ -54,77 +62,96 @@ html {
 .main{
     background-color: #F8F8F8;
 }
-/* неотображаемые блоки на мобилке*/
-.contact, .title__container {
+
+.nav__list.contacts, .title__container {
     display: none;
 }
 
-/* неотображаемые блоки на мобилке*/
-
-
-/* основная верстка на мобилку */
-.nav-container{
+.header .container{
     margin-top: 24px;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 51px;
+    max-height: 51px;
 }
 
-.nav__menu.menu{
-    width: 40px;
-    height: 40px;
-    margin-left: 16px;
-    margin-right: 17px;
-}
-.nav__menu.logo{
-    width: 97px;
-    height: 51px;
-    flex: 1;
-}
-
-.service {
+.nav__list{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.service .nav__menu{
+
+.nav__list.main{
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+}
+
+.nav__list.logo{
+    width: 97px;
+    height: 51px;
+    flex: 1;
+    margin-left: 16px;
+}
+
+.nav__item.logo__item{
+    flex: 1;
+}
+
+.nav__list.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service .nav__item{
     width: 40px;
     height: 40px;
 }
+
 .service::before{
     content: "";
     height: 32px;
     border: 1px solid #EAEAEA;
     border-radius: 2px;
-}
-.service__repair {
     margin-left: 20px;
 }
-.service__search {
-    margin-left: 16px;
+.service__item {
+    margin-left: 20px;
 }
 
-.scroll-panel{
+.scroll-panel__list{
     display: flex;
     justify-content: stretch;
     width: auto;
     overflow: scroll;
+    margin-left: 16px;
 }
 
-.scroll-panel::-webkit-scrollbar{
+.scroll-panel__list::-webkit-scrollbar{
     width: 0;
 }
 
-.scroll-panel__btn{
+.scroll-panel__item{
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 16px;
+}
+
+.scroll-panel__item .btn__item{
     font-size: 16px;
     padding: 8px 17px;
     color: #7E7E82;
-    background: #FFFFFF;
+    background: #F8F8F8;
     border: none;
-    flex-shrink: 0;
+}
+
+.scroll-panel__item--focus {
+    border: 2px solid #B8FFEC;
+    background: #FFFFFF;
+    border-radius: 6px;
 }
 
 .full-title__btn{
@@ -162,10 +189,6 @@ html {
         margin-left: 16px;
     }
 
-    .scroll-panel__btn--focus {
-        border: 2px solid #B8FFEC;
-        border-radius: 6px;
-    }
     .title__article{
         height: 90px;
         overflow: hidden;
@@ -195,8 +218,35 @@ html {
 }
 
 @media (min-width: 768px) {
-    .contact{
+    .nav__list.contacts{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__item.contacts__item{
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacts .contacts__item{
+        margin-left: 16px;
+    }
+
+    .nav__item.menu{
+        margin-right: 20px;
+        margin-left: 24px;
+    }
+
+    .nav__item.logo__item{
+        margin-left: 30px;
+    }
+
+    .nav__list.main::after{
+        content: "";
+        height: 32px;
+        border: 1px solid #EAEAEA;
+        border-radius: 2px;
     }
 
     .descr{
@@ -209,13 +259,6 @@ html {
 
     .nav__line{
         margin-right: 20px;
-    }
-
-    .nav__line::after{
-        content: "";
-        height: 32px;
-        border: 1px solid #EAEAEA;
-        border-radius: 2px;
     }
 
     .contact .nav__menu{
