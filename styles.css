@@ -147,6 +147,7 @@ li{
     background-color: #F8F8F8;
     border: none;
     transition: filter 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .scroll-panel__item .btn__item:hover{
@@ -213,6 +214,7 @@ li{
     .full-title__btn{
         display: flex;
         margin-left: 16px;
+        cursor: pointer;
     }
 
     .img768{
