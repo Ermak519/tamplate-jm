@@ -104,6 +104,10 @@ ul{
     filter: opacity(65%);
 }
 
+.nav__close:focus{
+    filter: opacity(65%);
+}
+
 .nav__logo{
     flex: 1;
 }
@@ -118,6 +122,10 @@ ul{
     filter: opacity(65%);
 }
 
+.nav__search:focus{
+    filter: opacity(65%);
+}
+
 .side-menu__section{
     margin-left: 24px;
     flex: 1;
@@ -129,6 +137,11 @@ ul{
 }
 
 .section-menu__item:hover{
+    color: #7E7E82;
+    cursor: pointer;
+}
+
+.section-menu__item:focus{
     color: #7E7E82;
     cursor: pointer;
 }
@@ -179,6 +192,11 @@ ul{
     cursor: pointer;
 }
 
+.footer__item:focus{
+    filter: hue-rotate(70deg) opacity(90%);
+    cursor: pointer;
+}
+
 .footer__contacts img{
     margin-right: 16px;
 }
@@ -196,6 +214,10 @@ ul{
     color: #7E7E82;
 }
 
+.feetback__item:focus{
+    color: #7E7E82;
+}
+
 .toggler__list{
     display: flex;
     justify-content: start;
@@ -209,6 +231,11 @@ ul{
 }
 
 .toggler__item:hover{
+    color: #7E7E82;
+    cursor: pointer;
+}
+
+.toggler__item:focus{
     color: #7E7E82;
     cursor: pointer;
 }

@@ -144,13 +144,22 @@ li{
     font-size: 16px;
     padding: 8px 17px;
     color: #7E7E82;
-    background: #F8F8F8;
+    background-color: #F8F8F8;
     border: none;
+    transition: filter 0.2s ease-in-out;
 }
 
-.scroll-panel__item--focus {
+.scroll-panel__item .btn__item:hover{
+    filter: opacity(70%);
+}
+
+.scroll-panel__item .btn__item:focus{
+    filter: opacity(70%);
+}
+
+.scroll-panel__item .btn__item--focus {
     border: 2px solid #B8FFEC;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 6px;
 }
 
