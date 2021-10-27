@@ -44,6 +44,10 @@ li{
     list-style: none;
     cursor: pointer;
 }
+p{
+    margin: 0;
+    padding: 0;
+}
 
 .wrapper{
     max-width:1440px;
@@ -65,15 +69,12 @@ li{
     line-height: 24px;
     text-align: left;
     color: #7E7E82;
-    margin-left: 32px;
 }
 
-.swiper{
+.swiper-wrapper{
     display: flex;
-    justify-content: start;
     align-items: center;
     margin-bottom: 16px;
-    max-width: 768px;
 }
 
 
@@ -81,7 +82,6 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
 
     height: 72px;
     max-width: 240px;
@@ -101,6 +101,10 @@ li{
 
 
 @media (min-width: 768px) {
+
+    .title{
+        margin-left: 32px;
+    }
 
     .brend-wrappper{
         margin-left: 32px;
