@@ -169,7 +169,7 @@ p{
         flex-grow: 1;
     
         height: 72px;
-        width: 224px;
+        width: 25vw;
     
         padding: 20px 16px;
         margin-top: 16px;
@@ -181,8 +181,6 @@ p{
         box-sizing: border-box;
         border-radius: 6px;
     }
-
-
 }
 
 @media (min-width: 1120px){
