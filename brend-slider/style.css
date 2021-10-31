@@ -39,10 +39,13 @@ html {
 
 ul{
     padding: 0;
+    margin: 0;
 }
 li{
     list-style: none;
     cursor: pointer;
+    padding: 0;
+    margin: 0;
 }
 p{
     margin: 0;
@@ -104,6 +107,8 @@ p{
 
     .title{
         margin-left: 32px;
+        text-transform: uppercase;
+        padding: 16px;
     }
 
     .brend-wrappper{
@@ -141,6 +146,8 @@ p{
         cursor: pointer;
         width: 140px;
         margin-left: 32px;
+        margin-top: 24px;
+        margin-bottom: 14px;
         align-self: flex-start;
     }
 
@@ -150,7 +157,6 @@ p{
         align-items: center;
         flex-shrink: 0;
         flex-wrap: wrap;
-        margin-bottom: 16px;
         max-width: 800px;
         margin-right: 24px;
     }
@@ -160,19 +166,21 @@ p{
         justify-content: space-between;
         align-items: center;
         flex-shrink: 0;
+        flex-grow: 1;
     
         height: 72px;
         width: 224px;
     
         padding: 20px 16px;
-        margin-bottom: 16px;
+        margin-top: 16px;
+        margin-right: 32px;
+       
     
         background: #FFFFFF;
         border: 1px solid #EAEAEA;
         box-sizing: border-box;
         border-radius: 6px;
     }
-
 
 
 }
